@@ -1,0 +1,1 @@
+### a awesome spring archetype
