@@ -24,6 +24,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <web.port>8895</web.port>
+        <frontend-maven-plugin.version>0.0.23</frontend-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -47,7 +48,7 @@
                     <plugin>
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
-                        <version>0.0.20</version>
+                        <version>${frontend-maven-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>install node and npm</id>
@@ -77,6 +78,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
+                        <version>2.2</version>
                         <configuration>
                             <failOnMissingWebXml>false</failOnMissingWebXml>
                             <warSourceExcludes>**/*</warSourceExcludes>
@@ -155,7 +157,7 @@
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
-                <version>0.0.20</version>
+                <version>${frontend-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>install node and npm</id>
@@ -174,6 +176,9 @@
                             <goal>npm</goal>
                         </goals>
                         <phase>generate-resources</phase>
+                        <!--<configuration>
+                            <arguments>&#45;&#45;registry=https://registry.npm.taobao.org</arguments>
+                        </configuration>-->
                     </execution>
                     <execution>
                         <id>bower install</id>

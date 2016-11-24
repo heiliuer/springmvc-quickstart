@@ -3,22 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    <display-name>starter</display-name>
-    <listener>
-        <listener-class>com.nercel.starclink.phygame.mobile.listener.AppSessionListener</listener-class>
-    </listener>
-    <error-page>
-        <error-code>404</error-code>
-        <location>/resources/pages/errorNoPage.html</location>
-    </error-page>
-    <error-page>
-        <exception-type>java.lang.Exception</exception-type>
-        <location>/resources/pages/error.html</location>
-    </error-page>
+    <display-name>springmvc-quickstart-archetype</display-name>
     <session-config>
         <session-timeout>1440</session-timeout>
         <cookie-config>
-            <name>m_session</name>
+            <name>jsession</name>
         </cookie-config>
     </session-config>
 </web-app>
