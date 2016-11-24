@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor name="basic">
+<archetype-descriptor name="springmvc-quickstart">
     <fileSets>
         <fileSet filtered="false" packaged="false">
             <directory>.mvn</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
         </fileSet>
         <fileSet filtered="false" packaged="false">
             <directory></directory>
             <includes>
-                <include>**/*</include>
+                <include>*</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" packaged="false">
             <directory></directory>
             <includes>
                 <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="false" packaged="true">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="false" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="false" packaged="false">
+            <directory>src/main/webapp</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false">
+            <directory>src/main/webapp/WEB-INF</directory>
+            <includes>
+                <include>web.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*</include>
             </includes>
         </fileSet>
     </fileSets>
