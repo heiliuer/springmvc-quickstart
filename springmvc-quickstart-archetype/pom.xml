@@ -140,6 +140,9 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+            <properties>
+                <env.dir>dev</env.dir>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -170,6 +173,9 @@
         </profile>
         <profile>
             <id>prev</id>
+            <properties>
+                <env.dir>prev</env.dir>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -186,6 +192,9 @@
         </profile>
         <profile>
             <id>prod</id>
+            <properties>
+                <env.dir>prod</env.dir>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -202,6 +211,19 @@
     </profiles>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>dev/*</exclude>
+                    <exclude>prev/*</exclude>
+                    <exclude>prod/*</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources/${env.dir}</directory>
+            </resource>
+        </resources>
 
         <plugins>
 

@@ -3,13 +3,21 @@
 <head>
     <title>Title</title>
 </head>
-<!-- inject:css -->
-<link rel="stylesheet" href="resources/vendor/css/lib.min.css">
+
+<!-- build:css resources/css/app-all.css-->
 <link rel="stylesheet" href="resources/css/app.css">
-<!-- endinject -->
+<link rel="stylesheet" href="resources/css/common.css">
+<!-- endbuild -->
 <body>
 
 </body>
 
-<script src=""></script>
+
+<!-- build:js resources/vendor/js/jquery.js-->
+<script src="resources/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbuild -->
+
+<!-- build:js resources/js/app.js-->
+<script src="resources/js/app.js"></script>
+<!-- endbuild -->
 </html>
