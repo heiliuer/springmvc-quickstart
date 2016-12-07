@@ -5,7 +5,7 @@
 
 - mvn3.x
 - jdk7
-- spring 
+- spring-boot 3.x
 
 
 [参考文档](https://maven.apache.org/guides/mini/guide-creating-archetypes.html)

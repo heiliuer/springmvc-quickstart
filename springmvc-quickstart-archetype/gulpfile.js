@@ -66,8 +66,8 @@ gulp.task("html", function () {
 
         .pipe(gulp.dest(targetFolder))
 
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(manifestFileFolder))  // Record rev manifest to file
+        // .pipe(rev.manifest())// Record rev manifest to file
+        // .pipe(gulp.dest(manifestFileFolder))
 
 
 });
