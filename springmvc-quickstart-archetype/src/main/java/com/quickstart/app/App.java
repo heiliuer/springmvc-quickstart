@@ -11,7 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-@ComponentScan
+@ComponentScan(basePackages = "com.quickstart")
 @EnableAutoConfiguration
 @EnableConfigurationProperties({AppCommonProperties.class, LiquibaseProperties.class})
 public class App {
