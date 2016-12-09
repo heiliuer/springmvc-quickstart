@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -23,6 +22,7 @@ public class HelloController {
     @RequestMapping("/")
     String home(Model model, HttpServletRequest request) {
         model.addAttribute("msg", "Hello " + request.getPathInfo());
+
         return "index";
     }
 

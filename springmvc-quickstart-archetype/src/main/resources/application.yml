@@ -1,0 +1,16 @@
+server:
+  # random port 0
+  port: 8080
+
+app_common:
+  name: world
+spring.profiles.include: log4j,common
+
+spring:
+  thymeleaf.cache: false
+  thymeleaf.mode: HTML5
+  thymeleaf.encoding: UTF-8
+  thymeleaf.content-type: text/html
+  thymeleaf.prefix: /WEB-INF/views/
+#  thymeleaf.prefix: classpath:/templates/
+  thymeleaf.suffix: .html

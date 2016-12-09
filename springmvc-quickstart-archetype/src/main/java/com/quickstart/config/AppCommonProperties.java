@@ -7,6 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @ConfigurationProperties(prefix = "app_common", ignoreUnknownFields = false)
 public class AppCommonProperties {
+
     private String name;
 
     public String getName() {
@@ -16,4 +17,5 @@ public class AppCommonProperties {
     public void setName(String name) {
         this.name = name;
     }
+
 }
